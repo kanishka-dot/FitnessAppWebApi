@@ -1,0 +1,58 @@
+﻿@model FitnessAppWebApi.Models.Meal
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Meal</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserID" class="control-label"></label>
+                <input asp-for="UserID" class="form-control" />
+                <span asp-validation-for="UserID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Totcalories" class="control-label"></label>
+                <input asp-for="Totcalories" class="form-control" />
+                <span asp-validation-for="Totcalories" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Totcarbs" class="control-label"></label>
+                <input asp-for="Totcarbs" class="form-control" />
+                <span asp-validation-for="Totcarbs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Totprotien" class="control-label"></label>
+                <input asp-for="Totprotien" class="form-control" />
+                <span asp-validation-for="Totprotien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Totfat" class="control-label"></label>
+                <input asp-for="Totfat" class="form-control" />
+                <span asp-validation-for="Totfat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

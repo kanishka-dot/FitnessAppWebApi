@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RZ7QGf13l6kTHf5EvU2TkyQL99ZDcFZgPhMyw1suKeo=",
+  "Source": "FitnessAppAPIGateway",
+  "BasePath": "_content/FitnessAppAPIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
